@@ -176,55 +176,55 @@ const PEO_DATA = {
       { num: 1, members: [
         { id: "JM", rank: 1, lv: 12, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" },
         { id: "혀노", rank: 2, lv: 10, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" }
-      ]}},
+      ]},
       { num: 2, members: [
         { id: "머룬", rank: 3, lv: 11, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" },
         { id: "진원", rank: 4, lv: 10, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" }
-      ]}},
+      ]},
       { num: 3, members: [
         { id: "네모러너", rank: 5, lv: 10, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" },
         { id: "연", rank: 6, lv: 11, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" }
-      ]}},
+      ]},
       { num: 4, members: [
         { id: "뽀기아빠", rank: 7, lv: 10, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" },
         { id: "찬우", rank: 8, lv: 2, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" }
-      ]}},
+      ]},
       { num: 5, members: [
         { id: "재형", rank: 10, lv: 10, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" },
         { id: "익런", rank: 9, lv: 9, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" }
-      ]}},
+      ]},
       { num: 6, members: [
         { id: "부개동러너", rank: 12, lv: 9, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" },
         { id: "멀루", rank: 11, lv: 9, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" }
-      ]}},
+      ]},
       { num: 7, members: [
         { id: "키키키", rank: 13, lv: 9, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" },
         { id: "HappyAI", rank: 14, lv: 10, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" }
-      ]}},
+      ]},
       { num: 8, members: [
         { id: "제로", rank: 15, lv: 10, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" },
         { id: "배당의민족", rank: 16, lv: 8, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" }
-      ]}},
+      ]},
       { num: 9, members: [
         { id: "스응민", rank: 18, lv: 9, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" },
         { id: "순현", rank: 17, lv: 9, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" }
-      ]}},
+      ]},
       { num: 10, members: [
         { id: "백화", rank: 20, lv: 9, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" },
         { id: "양봉", rank: 19, lv: 9, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" }
-      ]}},
+      ]},
       { num: 11, members: [
         { id: "런징", rank: 21, lv: 9, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" },
         { id: "SJ", rank: 22, lv: 9, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" }
-      ]}},
+      ]},
       { num: 12, members: [
         { id: "키가케이던스", rank: 24, lv: 8, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" },
         { id: "경민", rank: 23, lv: 8, km: 0, remain: 15.0, fine: 45000, msg: "Let's roll!", remark: "" }
-      ]}},
+      ]},
       { num: 13, members: [
         { id: "갤러리킴", rank: 25, lv: 7, km: 0, remain: 15.0, fine: 45000, msg: "Welcome Back", remark: "병가" },
         { id: "꾸마", rank: 26, lv: 9, km: 0, remain: 15.0, fine: 45000, msg: "Welcome Back", remark: "출산휴가" }
-      ]}}
+      ]}
     ]
   }
 };
