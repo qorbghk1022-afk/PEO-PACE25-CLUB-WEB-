@@ -232,7 +232,7 @@ const PEO_DATA = {
 const QUARTERLY_DATA = {
   period: { start: "2025.12.29", end: "2026.3.22" },
   scores: {
-    "JM": { rank: 1, total: 91, endurance: 100, speed: 76, consistency: 92, cadence: 98, longrun: 0 },
+    "JM": { rank: 1, total: 91, endurance: 100, speed: 76, consistency: 92, cadence: 98, longrun: 91 },
     "HappyAI": { rank: 9, total: 66, endurance: 72, speed: 81, consistency: 52, cadence: 86, longrun: 40 },
     "재형": { rank: 8, total: 67, endurance: 78, speed: 71, consistency: 64, cadence: 93, longrun: 28 },
     "연": { rank: 3, total: 79, endurance: 92, speed: 84, consistency: 72, cadence: 80, longrun: 65 },
