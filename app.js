@@ -290,16 +290,29 @@
   function renderTeamView() {
     const container = document.getElementById('challenge-team-view');
     const goal = PEO_DATA.challenge.goal;
+    const finePerKm = PEO_DATA.challenge.finePerKm;
     let html = '';
 
     PEO_DATA.challenge.teams.forEach(team => {
-      const teamKm = team.members.reduce((sum, m) => sum + m.km, 0);
+      // Active members (not on leave)
+      const activeMembers = team.members.filter(m => m.remark === '');
+      const teamKm = activeMembers.reduce((sum, m) => sum + m.km, 0);
+      const teamGoal = activeMembers.length * goal; // 팀 합산 목표
+      const teamRemain = Math.max(teamGoal - teamKm, 0);
+      const teamFine = teamRemain * finePerKm;
       
       html += `<div class="team-card" data-testid="team-card-${team.num}">`;
       html += `<div class="team-card-header">`;
       html += `<span class="team-number">TEAM ${team.num}</span>`;
       html += `<span class="team-total-km">${teamKm}km</span>`;
       html += `</div>`;
+      
+      // Team fine summary
+      if (teamFine > 0) {
+        html += `<div class="team-fine-row">팀 벌금: ₩${teamFine.toLocaleString()} (남은 ${teamRemain}km / 목표 ${teamGoal}km)</div>`;
+      } else {
+        html += `<div class="team-fine-row team-clear">팀 벌금: ₩0 ✔ 완주!</div>`;
+      }
       
       team.members.forEach(m => {
         const pct = Math.min((m.km / goal) * 100, 100);
@@ -320,14 +333,9 @@
         }
         html += `</div>`;
         
-        // Show fine and message below the progress bar
-        if (!isOnLeave) {
-          const extras = [];
-          if (m.fine > 0) extras.push(`<span class="tm-fine">₩${m.fine.toLocaleString()}</span>`);
-          if (m.msg) extras.push(`<span class="tm-msg">"${m.msg}"</span>`);
-          if (extras.length > 0) {
-            html += `<div style="display:flex;gap:8px;padding:0 0 4px 78px;align-items:center;">${extras.join('')}</div>`;
-          }
+        // Show message
+        if (!isOnLeave && m.msg) {
+          html += `<div style="display:flex;gap:8px;padding:0 0 4px 78px;align-items:center;"><span class="tm-msg">"${m.msg}"</span></div>`;
         }
       });
       
@@ -340,6 +348,20 @@
   function renderIndividualView() {
     const container = document.getElementById('challenge-individual-view');
     const goal = PEO_DATA.challenge.goal;
+    const finePerKm = PEO_DATA.challenge.finePerKm;
+    
+    // Build team fine map (team-based fine calculation)
+    const teamFineMap = {};
+    PEO_DATA.challenge.teams.forEach(team => {
+      const activeMembers = team.members.filter(m => m.remark === '');
+      const teamKm = activeMembers.reduce((sum, m) => sum + m.km, 0);
+      const teamGoal = activeMembers.length * goal;
+      const teamRemain = Math.max(teamGoal - teamKm, 0);
+      const teamFine = teamRemain * finePerKm;
+      team.members.forEach(m => {
+        teamFineMap[m.id] = { teamNum: team.num, teamFine: teamFine, teamKm: teamKm, teamGoal: teamGoal };
+      });
+    });
     
     // Collect all members from teams, sort by km desc then rank asc
     let allMembers = [];
@@ -360,6 +382,7 @@
       const isOnLeave = m.remark !== '';
       const nameClass = isOnLeave ? 'ind-name on-leave' : 'ind-name';
       const rankClass = rank <= 3 ? 'ind-rank top3' : 'ind-rank';
+      const tf = teamFineMap[m.id];
 
       html += `<div class="individual-item">`;
       html += `<span class="${rankClass}">${rank}</span>`;
@@ -367,6 +390,7 @@
       html += `<div class="ind-name-row">`;
       html += `<span class="${nameClass}">${m.id}</span>`;
       html += `<span class="tm-lv">LV${m.lv}</span>`;
+      html += `<span class="ind-team-badge">팀${m.teamNum}</span>`;
       if (isOnLeave) html += `<span class="tm-remark-badge">${m.remark}</span>`;
       html += `</div>`;
       
@@ -378,10 +402,6 @@
       html += `</div>`; // ind-info
       
       html += `<span class="ind-km">${m.km}km</span>`;
-      
-      if (!isOnLeave && m.fine > 0) {
-        html += `<span class="ind-fine">₩${m.fine.toLocaleString()}</span>`;
-      }
       
       html += `</div>`;
     });
