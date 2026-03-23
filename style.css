@@ -1384,3 +1384,9 @@ main {
 .rank-name.clickable:active {
   color: #D92610;
 }
+
+/* Rank item tap feedback */
+.rank-item:active {
+  background: #F5F5F5;
+  transform: scale(0.99);
+}

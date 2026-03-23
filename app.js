@@ -491,7 +491,7 @@
       const medals = ['', '🥇', '🥈', '🥉'];
       const medal = medals[rank] || '';
 
-      html += `<div class="${itemClass}" data-testid="rank-item-${rank}">`;
+      html += `<div class="${itemClass}" data-testid="rank-item-${rank}" onclick="goToMember('${m.id}')" style="cursor:pointer">`;
       
       if (medal) {
         html += `<span class="rank-medal">${medal}</span>`;
@@ -501,7 +501,7 @@
       
       html += `<div class="rank-info">`;
       html += `<div class="rank-name-row">`;
-      html += `<span class="rank-name clickable" onclick="goToMember('${m.id}')" data-testid="link-rank-${m.id}">${m.name}</span>`;
+      html += `<span class="rank-name" data-testid="link-rank-${m.id}">${m.name}</span>`;
       html += `<span class="rank-lv">LV${m.lv}</span>`;
       html += `</div>`;
       
