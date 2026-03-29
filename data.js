@@ -67,8 +67,8 @@ const PEO_DATA = {
     },
     {
       id: "재형", name: "재형", realname: "김재형",
-      lv: 11, totalExp: 2636.0, expPct: 4, totalDist: 167.61, totalDays: 30,
-      current: { distance: 4.8, longest: 4.8, pace: "06:37", days: 1, cadence: 177, prevDistance: 16.0, endurance: 24.0, longRun: 22.0, finalEndurance: 0, speed: 58.0, consistency: 20.0, cadenceScore: 95.0, totalScore: 40.0 },
+      lv: 11, totalExp: 2676.0, expPct: 4, totalDist: 173.15, totalDays: 30,
+      current: { distance: 10.3, longest: 5.5, pace: "06:04", days: 1, cadence: 178, prevDistance: 16.0, endurance: 52.0, longRun: 26.0, finalEndurance: 0, speed: 66.0, consistency: 20.0, cadenceScore: 97.0, totalScore: 50.0 },
       previous: { distance: 16.0, longest: 6.4, pace: "06:12", days: 3, cadence: 176, prevDistance: 16.3, endurance: 76.0, longRun: 30.0, finalEndurance: 0, speed: 64.0, consistency: 60.0, cadenceScore: 94.0, totalScore: 64.0 }
     },
     {
@@ -79,8 +79,8 @@ const PEO_DATA = {
     },
     {
       id: "진원", name: "진원", realname: "김진원",
-      lv: 10, totalExp: 2445.0, expPct: 3, totalDist: 238.11, totalDays: 15,
-      current: { distance: 0.0, longest: 0.0, pace: "00:00", days: 0, cadence: 0, prevDistance: 42.3, endurance: 0.0, longRun: 0.0, finalEndurance: 0, speed: 0.0, consistency: 0.0, cadenceScore: 0.0, totalScore: 0.0 },
+      lv: 11, totalExp: 2793.0, expPct: 5, totalDist: 259.32, totalDays: 16,
+      current: { distance: 21.2, longest: 21.2, pace: "05:33", days: 1, cadence: 176, prevDistance: 42.3, endurance: 81.0, longRun: 80.0, finalEndurance: 0, speed: 73.0, consistency: 20.0, cadenceScore: 93.0, totalScore: 68.0 },
       previous: { distance: 42.3, longest: 21.2, pace: "05:36", days: 2, cadence: 177, prevDistance: 42.3, endurance: 96.0, longRun: 80.0, finalEndurance: 0, speed: 72.0, consistency: 40.0, cadenceScore: 95.0, totalScore: 75.0 }
     },
     {
@@ -103,8 +103,8 @@ const PEO_DATA = {
     },
     {
       id: "익런", name: "익런", realname: "강성익",
-      lv: 10, totalExp: 2374.0, expPct: 2, totalDist: 145.67, totalDays: 37,
-      current: { distance: 9.0, longest: 3.0, pace: "05:56", days: 3, cadence: 156, prevDistance: 15.2, endurance: 45.0, longRun: 14.0, finalEndurance: 0, speed: 68.0, consistency: 60.0, cadenceScore: 60.0, totalScore: 52.0 },
+      lv: 10, totalExp: 2389.0, expPct: 2, totalDist: 148.67, totalDays: 37,
+      current: { distance: 12.0, longest: 3.0, pace: "05:55", days: 3, cadence: 156, prevDistance: 15.2, endurance: 60.0, longRun: 14.0, finalEndurance: 0, speed: 68.0, consistency: 60.0, cadenceScore: 60.0, totalScore: 55.0 },
       previous: { distance: 15.2, longest: 3.0, pace: "06:16", days: 5, cadence: 150, prevDistance: 10.2, endurance: 75.0, longRun: 14.0, finalEndurance: 0, speed: 63.0, consistency: 100.0, cadenceScore: 50.0, totalScore: 65.0 }
     },
     {
@@ -127,8 +127,8 @@ const PEO_DATA = {
     },
     {
       id: "키가케이던스", name: "키가케이던스", realname: "추기훈",
-      lv: 8, totalExp: 1871.0, expPct: 94, totalDist: 99.43, totalDays: 12,
-      current: { distance: 0.0, longest: 0.0, pace: "00:00", days: 0, cadence: 0, prevDistance: 5.0, endurance: 0.0, longRun: 0.0, finalEndurance: 0, speed: 0.0, consistency: 0.0, cadenceScore: 0.0, totalScore: 0.0 },
+      lv: 9, totalExp: 2132.0, expPct: 1, totalDist: 106.92, totalDays: 13,
+      current: { distance: 7.5, longest: 7.5, pace: "05:27", days: 1, cadence: 177, prevDistance: 5.0, endurance: 37.0, longRun: 35.0, finalEndurance: 0, speed: 74.0, consistency: 20.0, cadenceScore: 95.0, totalScore: 50.0 },
       previous: { distance: 5.0, longest: 5.0, pace: "05:51", days: 1, cadence: 167, prevDistance: 15.1, endurance: 25.0, longRun: 23.0, finalEndurance: 0, speed: 69.0, consistency: 20.0, cadenceScore: 78.0, totalScore: 42.0 }
     },
     {
@@ -169,17 +169,17 @@ const PEO_DATA = {
     goal: 15,
     finePerKm: 3000,
     totalParticipants: 24,
-    completions: 1,
-    totalKm: 113.0,
-    completionRate: 4.2,
+    completions: 2,
+    totalKm: 151.0,
+    completionRate: 8.3,
     teams: [
       { num: 1, members: [
         { id: "JM", rank: 1, lv: 13, km: 12.0, remain: 4.8, fine: 15000, msg: "move!!", remark: "" },
         { id: "혀노", rank: 2, lv: 11, km: 8.0, remain: 4.8, fine: 15000, msg: "move!!", remark: "" }
       ] },
       { num: 2, members: [
-        { id: "머룬", rank: 3, lv: 12, km: 4.0, remain: 12.8, fine: 39000, msg: "move!!", remark: "" },
-        { id: "진원", rank: 4, lv: 10, km: 0.0, remain: 12.8, fine: 39000, msg: "Let’s roll!", remark: "" }
+        { id: "머룬", rank: 3, lv: 12, km: 4.0, remain: 2.2, fine: 7500, msg: "move!!", remark: "" },
+        { id: "진원", rank: 4, lv: 11, km: 21.0, remain: 2.2, fine: 7500, msg: "Complete!!!", remark: "" }
       ] },
       { num: 3, members: [
         { id: "네모러너", rank: 5, lv: 10, km: 2.0, remain: 6.3, fine: 18000, msg: "move!!", remark: "" },
@@ -190,8 +190,8 @@ const PEO_DATA = {
         { id: "찬우", rank: 8, lv: 3, km: 8.0, remain: 6.2, fine: 18000, msg: "move!!", remark: "" }
       ] },
       { num: 5, members: [
-        { id: "재형", rank: 10, lv: 11, km: 5.0, remain: 8.1, fine: 24000, msg: "move!!", remark: "" },
-        { id: "익런", rank: 9, lv: 10, km: 9.0, remain: 8.1, fine: 24000, msg: "move!!", remark: "" }
+        { id: "재형", rank: 10, lv: 11, km: 10.0, remain: 3.9, fine: 12000, msg: "move!!", remark: "" },
+        { id: "익런", rank: 9, lv: 10, km: 12.0, remain: 3.9, fine: 12000, msg: "move!!", remark: "" }
       ] },
       { num: 6, members: [
         { id: "부개동러너", rank: 12, lv: 9, km: 0.0, remain: 14.5, fine: 43500, msg: "Let’s roll!", remark: "" },
@@ -218,8 +218,8 @@ const PEO_DATA = {
         { id: "SJ", rank: 22, lv: 10, km: 5.0, remain: 9.8, fine: 30000, msg: "move!!", remark: "" }
       ] },
       { num: 12, members: [
-        { id: "키가케이던스", rank: 24, lv: 8, km: 0.0, remain: 13.7, fine: 40500, msg: "Let’s roll!", remark: "" },
-        { id: "경민", rank: 23, lv: 9, km: 3.0, remain: 13.7, fine: 40500, msg: "move!!", remark: "" }
+        { id: "키가케이던스", rank: 24, lv: 9, km: 7.0, remain: 10.0, fine: 30000, msg: "move!!", remark: "" },
+        { id: "경민", rank: 23, lv: 9, km: 3.0, remain: 10.0, fine: 30000, msg: "move!!", remark: "" }
       ] },
       { num: 13, members: [
         { id: "갤러리킴", rank: 25, lv: 7, km: 0.0, remain: 15.0, fine: 0, msg: "Welcome Back", remark: "병가" },
